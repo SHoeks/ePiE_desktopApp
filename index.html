@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Download ePiE</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #2c3e50, #3498db);
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 0px;
+      flex-direction: column;
+    }
+
+    .container {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 16px;
+      padding: 40px;
+      text-align: center;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      max-width: 650px;
+      width: 100%;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      margin-top: 20px;
+    }
+
+    p {
+      font-size: 1.1rem;
+      margin-bottom: 30px;
+    }
+
+    .button-group {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      align-items: center;
+      margin-bottom: 30px;
+    }
+
+    .download-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      background: #f1c40f;
+      color: #2c3e50;
+      padding: 14px 30px;
+      font-size: 1.1rem;
+      font-weight: 600;
+      border: none;
+      border-radius: 50px;
+      text-decoration: none;
+      transition: background 0.3s ease, transform 0.2s ease;
+      width: 100%;
+      max-width: 180px;
+    }
+
+    .download-btn:hover {
+      background: #f39c12;
+      transform: translateY(-2px);
+    }
+
+    .github-link {
+      margin-top: 25px;
+      font-size: 0.95rem;
+      color: #ecf0f1;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .github-link:hover {
+      color: #f1c40f;
+    }
+
+    @media (min-width: 600px) {
+      .button-group {
+        flex-direction: row;
+        margin-left: 77px;
+        margin-right: 76px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Download ePiE</h1>
+    <p>
+        Here the graphical user interface for the ePiE model can be downloaded. The ePiE model is
+        a spatially explicit model that estimates concentrations of active pharmaceutical ingredients (APIs) 
+        in surface waters across Europe.
+    </p>
+    
+    <div class="button-group">
+        <a href="workinprogress.html" class="download-btn">Download Windows installer</a>
+        <a href="workinprogress.html" class="download-btn">Download Mac installer</a>
+    </div>
+    
+    <p> 
+        This application was developed by Selwyn Hoeks at Radboud University supported by the PREMIER project 
+        to facilitate the use of the ePiE model.
+    </p>
+
+    <a href="https://github.com/SHoeks/ePiE_desktopApp/" class="github-link" target="_blank">View on GitHub</a>
+    <div style="width: 2px;"></div>
+    <a href="https://pubs.acs.org/doi/10.1021/acs.est.8b03862" class="github-link" target="_blank">View original publication</a>
+  </div>
+
+</body>
+</html>
