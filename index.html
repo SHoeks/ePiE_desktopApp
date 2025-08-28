@@ -16,7 +16,8 @@
       align-items: center;
       min-height: 100vh;
       padding: 0px;
-      flex-direction: column;
+      /* flex-direction: column; */
+      width: 100vw;
     }
 
     .container {
@@ -89,6 +90,18 @@
         margin-left: 77px;
         margin-right: 76px;
       }
+      body{
+        flex-direction: column;
+      }
+    }
+    #imgDiv{
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+    #imgDiv img{
+      width: 120px;
+      height: 120px;
     }
   </style>
 </head>
@@ -96,17 +109,19 @@
 
   <div class="container">
     <h1>Download ePiE</h1>
+    <div id="imgDiv"><img src="public/favicon.png" alt="logo"></div>
     <p>
-        This page hosts the graphical user interface for the ePiE model. The ePiE model is
+        Here the graphical user interface for the ePiE model can be downloaded. The ePiE model is
         a spatially explicit model that estimates concentrations of active pharmaceutical ingredients (APIs) 
         in surface waters across Europe.
     </p>
+
     
     <div class="button-group">
-        <a href="workinprogress.html" class="download-btn">Download Windows installer</a>
-        <a href="workinprogress.html" class="download-btn">Download Mac installer</a>
+        <a href="workinprogress.html" class="download-btn">Download Windows installer<br>(version 0.8.4)</a>
+        <a href="workinprogress.html" class="download-btn">Download Mac installer<br>(in development)</a>
     </div>
-    
+
     <p> 
         This application was developed by Selwyn Hoeks at Radboud University supported by the PREMIER project 
         to facilitate the use of the ePiE model.
@@ -119,4 +134,3 @@
 
 </body>
 </html>
-

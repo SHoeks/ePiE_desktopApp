@@ -1,0 +1,90 @@
+{
+  "name": "ePiE",
+  "description": "epie gui build on electron",
+  "version": "0.8.4",
+  "author": {
+    "name": "Selwyn Hoeks",
+    "email": "selwynhoeks@gmail.com"
+  },
+  "license": "MIT",
+  "private": true,
+  "start": "react-scripts --openssl-legacy-provider start",
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "electron:build": "vue-cli-service electron:build",
+    "electron:serve": "vue-cli-service electron:serve",
+    "postinstall": "electron-builder install-app-deps",
+    "postuninstall": "electron-builder install-app-deps"
+  },
+  "main": "background.js",
+  "dependencies": {
+    "@aternus/csv-to-xlsx": "^3.0.1",
+    "@electron/remote": "^2.1.2",
+    "@maplibre/maplibre-gl-native": "^5.4.0",
+    "app-root-dir": "^1.0.2",
+    "bootstrap": "^5.3.3",
+    "bootstrap-vue": "^2.23.1",
+    "bulma": "^1.0.1",
+    "child_process": "^1.0.2",
+    "core-js": "^3.8.3",
+    "csv-parse": "^5.5.6",
+    "csv-parser": "^3.2.0",
+    "csv-writer": "^1.6.0",
+    "csv2geojson": "^5.1.2",
+    "d3-dsv": "^3.0.1",
+    "electron-tabs": "^1.0.4",
+    "expect": "^30.0.5",
+    "file-selector": "^0.6.0",
+    "get-screen-resolution": "^1.0.4",
+    "javascript-color-gradient": "^2.5.0",
+    "leaflet": "^1.9.4",
+    "leaflet.offline": "^3.1.0",
+    "mathjs": "^14.6.0",
+    "node-xlsx": "^0.24.0",
+    "osm": "^1.0.0",
+    "pandas-js": "^0.2.4",
+    "papaparse": "^5.5.3",
+    "pmtiles": "^3.0.7",
+    "primevue": "^4.0.0",
+    "read-excel-file": "^5.8.5",
+    "turf": "^3.0.14",
+    "underscore": "^1.13.7",
+    "vue": "^3.4.32",
+    "vue2-leaflet": "^2.7.1",
+    "win-screen-resolution": "^4.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.16",
+    "@babel/eslint-parser": "^7.12.16",
+    "@vue/cli-plugin-babel": "~5.0.0",
+    "@vue/cli-plugin-eslint": "~5.0.0",
+    "@vue/cli-service": "~5.0.0",
+    "electron": "^13.0.0",
+    "electron-devtools-installer": "^3.1.0",
+    "eslint": "^7.32.0",
+    "eslint-plugin-vue": "^8.0.3",
+    "vue-cli-plugin-electron-builder": "~2.1.1"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/vue3-essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "@babel/eslint-parser"
+    },
+    "rules": {}
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead",
+    "not ie 11"
+  ]
+}
